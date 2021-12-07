@@ -3,7 +3,6 @@ from typing import Dict
 
 from directories import Directory
 
-
 commands: Dict = {
     'CREATE': 'create',
     'MOVE': 'move',
@@ -11,7 +10,8 @@ commands: Dict = {
     'LIST': 'list'
 }
 
-if __name__ == '__main__':
+
+def main() -> None:
     directory: Directory = Directory()
 
     with open(
@@ -26,3 +26,7 @@ if __name__ == '__main__':
             else:
                 arguments = instruction[1]
                 getattr(directory, command)(arguments)
+
+
+if __name__ == '__main__':
+    main()

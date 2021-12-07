@@ -27,7 +27,8 @@ class Directory:
 
         self.root.update(new_directory)
 
-    def move(self, from_folder: str, to_folder: str) -> None:
+    def move(self, folder_path: str) -> None:
+        from_folder, to_folder = folder_path.split(' ')
         print(f'MOVE {from_folder} {to_folder}')
         folders: List = from_folder.split('/')
         sub_folder: Dict = self.root

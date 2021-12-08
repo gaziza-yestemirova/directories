@@ -14,7 +14,8 @@ commands: Dict = {
 def main() -> None:
     directory: Directory = Directory()
 
-    with open(os.path.join(os.path.dirname(__file__), "instructions.txt"), "r") as file:
+    with open(os.path.join(os.path.dirname(__file__),
+                           "../files/instructions.txt"), "r") as file:
         instructions = file.read().splitlines()
         for instruction in instructions:
             print(instruction)

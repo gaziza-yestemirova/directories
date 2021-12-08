@@ -21,7 +21,7 @@ $ pip install -r requirements.txt
 
 ### Script input
 
-The script will read commands line by line from **instructions.txt**
+The script will read commands line by line from **src/instructions.txt**
 
 ### To run the script
 ```console
